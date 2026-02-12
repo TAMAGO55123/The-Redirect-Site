@@ -1,0 +1,2 @@
+# The-Redirect-Site
+リダイレクトさせるだけ。
