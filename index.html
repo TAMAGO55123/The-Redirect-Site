@@ -18,9 +18,13 @@
 
             body{
                 background-color: #333;
+                color: #fff;
             }
             header{
                 width: 100%;
+            }
+            input#url{
+                
             }
         </style>
     </head>
@@ -31,8 +35,9 @@
         </header>
         <span class="fc"></span>
         
-        <input type="text" placeholder="Redirect URL">
-        <a href="" id="go-button">Go!</a>
+        <input type="text" placeholder="Redirect URL" id="url" class="bg-light-subtle text-white">
+        <label for="url">Redirect URL</label>
+        <a href="" id="go-button btn btn-outline-primary">Go!</a>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script>
             // https://github.com/TAMAGO55123/The-Redirect-Site
