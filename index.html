@@ -4,14 +4,41 @@
         <meta charset="utf-8">
         <title>The Redirect Site</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-64UC4BEhTGwk3eGpak4nO2jqtl7liTS+juXkSJ2gPAQPmlClQO7s5UgCeR6US48g" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <style>
+            .fl{
+                float: left;
+            }
+            .fr{
+                float: right;
+            }
+            .fc{
+                clear: both;
+            }
+
+            body{
+                background-color: #333;
+            }
+            
+        </style>
+        <script>
+            function blank(url){
+                window.open(url, "_blank");
+            }
+        </script>
     </head>
     <body>
         <header>
-            <h1>The Redirect Site</h1>
-            
+            <h1 class="fl">The Redirect Site</h1>
+            <button type="button" class="btn btn-outline-light fr" onclick="window.open('https://github.com/TAMAGO55123/The-Redirect-Site', '_blank')"><i class="bi bi-github"></i></button>
+            <span class="fc"></span>
         </header>
+        
         <input type="text" placeholder="Redirect URL">
         <a href="" id="go-button">Go!</a>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-jdSIJTK9l6XwXj3RixpVDXtMcA2bFd9O81RlLAwhpr2oXRqvQP88rr16IeFXTgFE" crossorigin="anonymous"></script>
+        <script>
+            
+        </script>
     </body>
 </html>
