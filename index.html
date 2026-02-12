@@ -23,16 +23,11 @@
                 width: 100%;
             }
         </style>
-        <script>
-            function blank(url){
-                window.open(url, "_blank");
-            }
-        </script>
     </head>
     <body>
         <header>
             <h1 class="fl">The Redirect Site</h1>
-            <a role="button" class="btn btn-outline-light" href="https://github.com/TAMAGO55123/The-Redirect-Site"><i class="bi bi-github"></i></a>
+            <button type="button" class="btn btn-outline-light" id="github-link"><i class="bi bi-github"></i></button>
         </header>
         <span class="fc"></span>
         
@@ -40,7 +35,10 @@
         <a href="" id="go-button">Go!</a>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-jdSIJTK9l6XwXj3RixpVDXtMcA2bFd9O81RlLAwhpr2oXRqvQP88rr16IeFXTgFE" crossorigin="anonymous"></script>
         <script>
-            
+            // https://github.com/TAMAGO55123/The-Redirect-Site
+            document.querySelector("button#github-link").addEventListener("click", () => {
+                window.open("https://github.com/TAMAGO55123/The-Redirect-Site", "_blank")
+            });
         </script>
     </body>
 </html>
