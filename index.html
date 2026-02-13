@@ -33,16 +33,22 @@
             <h1 class="fl">The Redirect Site</h1>
             <button type="button" class="btn btn-outline-light" id="github-link"><i class="bi bi-github"></i></button>
         </header>
-        <span class="fc"></span>
+        <span class="fc" style="display:none;"></span>
         
         <input type="text" placeholder="Redirect URL" id="url" class="bg-light-subtle text-white">
         <label for="url">Redirect URL</label>
-        <a href="" id="go-button btn btn-outline-primary">Go!</a>
+        <a href="" id="go-button" class="btn btn-outline-primary">Go!</a>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script>
             // https://github.com/TAMAGO55123/The-Redirect-Site
             document.querySelector("button#github-link").addEventListener("click", () => {
                 window.open("https://github.com/TAMAGO55123/The-Redirect-Site", "_blank")
+            });
+            document.querySelector("input#url").addEventListener("change", () => {
+                const a = document.querySelector("input#url").value;
+                document.querySelector("a#go-button").href=a;
+                if(a != "") document.querySelector("a#go-button").disabled = false;
+                else document.querySelector("a#go-button").disabled = true;
             });
         </script>
     </body>
